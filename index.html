@@ -73,7 +73,7 @@ var account = "";
     //            setTimeout(function () {
     //                var time = "2 minutes ago";
     //                $.notify({
-    //                    icon: '/Content/assets/img/b1.png',
+    //                    icon: 'https://bullrun.live/Content/assets/img/b1.png',
     //                    title: "User " + event.args._referral,
     //                    message: "Received " + event.args._level.c[1] == 1 ? level1 : event.args._level.c[1] == 2 ? level2 : event.args._level.c[1] == 3 ? level3 : level4 + " referral income from " + event.args._user
     //                }, {
@@ -105,7 +105,7 @@ var account = "";
     //            setTimeout(function () {
     //                var time = "2 minutes ago";
     //                $.notify({
-    //                    icon: '/Content/assets/img/b1.png',
+    //                    icon: 'https://bullrun.live/Content/assets/img/b1.png',
     //                    title: "Congragulations! New User " + event.args._user + " Registered ",
     //                    message: "Welcome to BullRun"
     //                }, {
@@ -139,7 +139,7 @@ var account = "";
     //            setTimeout(function () {
     //                var time = "2 minutes ago";
     //                $.notify({
-    //                    icon: '/Content/assets/img/b1.png',
+    //                    icon: 'https://bullrun.live/Content/assets/img/b1.png',
     //                    title: "User " + event.args._receiver,
     //                    message: "Received " + event.args._level.c[1] == 1 ? pool1_price : event.args._level.c[1] == 2 ? pool2_price : event.args._level.c[1] == 3 ? pool3_price : event.args._level.c[1] == 4 ? pool4_price : event.args._level.c[1] == 5 ? pool5_price : event.args._level.c[1] == 6 ? pool6_price : event.args._level.c[1] == 7 ? pool7_price : event.args._level.c[1] == 8 ? pool8_price : event.args._level.c[1] == 9 ? pool9_price : pool10_price + " Pool income from " + event.args._user
     //                }, {
@@ -180,7 +180,7 @@ $(document).ready(function () {
             myContractInstance.methods.users(account).call().then(function (result) {
                 if (result[0]) {
                     localStorage.setItem("address", account);
-                    location.href = "/Home/Dashboard";
+                    location.href = "/Home-Dashboard";
                 }
                 else {
                     $('.error').html('You need to register first');
@@ -209,7 +209,7 @@ $(document).ready(function () {
                 if (result1.status == "0x1") {
                     alert("success")
                     localStorage.setItem("address", account);
-                    location.href = "/Home/Dashboard";
+                    location.href = "/Home-Dashboard";
                 }
                 else {
                     $('.error').html('Transaction Failed');
@@ -279,7 +279,7 @@ $(document).ready(function () {
                     if (receipt.status) {
                         alert("success")
                         localStorage.setItem("address", account);
-                        location.href = "/Home/Dashboard";
+                        location.href = "/Home-Dashboard";
                     }
                     else {
                         $('.error').html('Transaction Failed');
@@ -304,7 +304,7 @@ $(document).ready(function () {
                        
 
                             localStorage.setItem("address", add);
-                            location.href = "/Home/Dashboard";
+                            location.href = "/Home-Dashboard";
                         }
                         else {
                             $('.error').html('You need to register first');
@@ -1808,7 +1808,7 @@ $(document).ready(function () {
                     </div>
                 </div>
                 <div class="purchase-token-btn text-center" style="margin-bottom:20px">
-                    <a href="https://1dapp.github.io/signup/" class="btn btn-lg btn-gradient-orange btn-round btn-glow">Register</a>
+                    <a href="https://1dapp.github.io/signup" class="btn btn-lg btn-gradient-orange btn-round btn-glow">Register</a>
                 </div>
                 <ul class="social-buttons list-unstyled mb-5">
                     <li class="animated" data-animation="fadeInUpShorter" data-animation-delay="0.5s"><a href="https://www.facebook.com/" target="_blank" title="Facebook" class="btn btn-outline-facebook rounded-circle"><i class="ti-facebook"></i></a></li>
